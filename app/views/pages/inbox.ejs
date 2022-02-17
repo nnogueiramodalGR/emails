@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../templates/head')-%>
+<body>
+
+    <div class="row">
+        <div class="col-md-2 ">
+            
+            <%- include('../templates/nav_lateral')-%>
+
+        </div>
+        <div class="col-md-7">
+            
+            
+            <h1 class="text-primary text-center">Caixa de Entrada</h1>
+
+            <% for(var i=0;i < 3; i++) { %>
+
+                <div class="border rounded m-2 p-2 border-secondary">
+                  <label>Remetente: <strong><%= dados[i].id %></strong></label><br>
+                  <label>Assunto: <strong>Email Enviado Do Formulário</strong></label><br>
+                 </div>
+  
+             <% } %>  
+            
+
+        </div>
+    </div>
+    
+
+    
+   
+
+    <%- include('../templates/bootstrap')-%>
+</body>
+</html>

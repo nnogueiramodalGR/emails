@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../templates/head')-%>
+<body>
+
+    <div class="row">
+        <div class="col-md-2 ">
+            
+            <%- include('../templates/nav_lateral')-%>
+
+        </div>
+        <div class="col-md-7">
+            
+            <h1 class="text-primary text-center">Nova Mensagem</h1>
+
+            <div>
+
+                <form method="post" action="/enviaremail">
+                    
+                    <div class="form-group">
+                        <label for="nome">Seu nome:</label>
+                        <input type="text" class="form-control" name= "nome" id="nome" placeholder="Exemplo: Nicollas Nogueira">
+                      </div>
+
+                    <div class="form-group">
+                      <label for="emailcontato">Seu Email</label>
+                      <input type="email" class="form-control" name="emailcontato" id="emailcontato" placeholder="nome@exemplo.com">
+                    </div>
+                    
+                    
+                    <div class="form-group">
+                      <label for="mensagem">Mensagem:</label>
+                      <textarea class="form-control" name="mensagem" id="mensagem" rows="3"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-success mt-2">Enviar</button>
+                  </form>
+
+
+            </div>
+
+        </div>
+    </div>
+    
+
+    
+   
+
+    <%- include('../templates/bootstrap')-%>
+</body>
+</html>

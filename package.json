@@ -1,0 +1,20 @@
+{
+  "name": "email",
+  "version": "1.0.0",
+  "description": "projeto de envio e recebimento de email",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nicollas Nogueira",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.0",
+    "consign": "^0.1.6",
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "nodemailer": "^6.7.2",
+    "nodemon": "^2.0.15",
+    "qs": "^6.10.3"
+  }
+}
